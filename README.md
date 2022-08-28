@@ -21,3 +21,5 @@ Observaciones: Crimson text (16px)
 #1B2430
 #### Logo
 [![Bookshop-1.png](https://i.postimg.cc/8kLT03vg/Bookshop-1.png)](https://postimg.cc/RqVr3gGg)
+## Link a FIGMA 
+[https://www.figma.com/file/areKLaiX9RAlDqnlkAFvh2/DelMerodeador?node-id=0%3A1]
