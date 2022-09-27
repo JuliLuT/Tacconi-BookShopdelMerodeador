@@ -9,9 +9,9 @@
     <meta name="description" content="Libreria e-commerce">
     <meta name="keywords" content="libros, sagas, libreria, clasicos, filosofia, ciencia ficcion, web,">
     <title>Libreria DM Home</title>
-    <link rel="stylesheet" href="./EstilosdepaginaHome.css">
+    <link rel="stylesheet" href="./css/EstilosdepaginaHome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="icon" href="./Del merodeador web.png">
+    <link rel="icon" href="./imagenes/Del merodeador web.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap" rel="stylesheet">
@@ -23,13 +23,15 @@
     <header class="topheader">
         <nav class="topnav">
             <a href="#" class="logo">
-                <img height="60px" width="60px" src="./Bookshop (1).png" alt="Logo" />
+                <img height="60px" width="60px" src="./imagenes/Bookshop (1).png" alt="Logo" />
                 <div> BookShop
                 </div>
             </a>
-            <button class="open-menu" aria-label="Abrir menú"><img src="botonhamburg.svg" alt="Abrir menú"></button>
+            <button class="open-menu" aria-label="Abrir menú"><img src="./imagenes/botonhamburg.svg"
+                    alt="Abrir menú"></button>
             <ul class="menu">
-                <button class="close-menu" aria-label="Cerrar menú"><img src="cerrarbtn.svg" alt="Cerrar menú"></button>
+                <button class="close-menu" aria-label="Cerrar menú"><img src="./imagenes/cerrarbtn.svg"
+                        alt="Cerrar menú"></button>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">About us</a></li>
@@ -38,120 +40,117 @@
         </nav>
     </header>
     <div class="hero-image">
+        <div class="buscar-hero">
+            <input type="text" placeholder="Buscar libro">
+            <button type="submit"> Buscar</button>
+        </div>
     </div>
-    </div>
-    <section>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro 1.jpg" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$2500</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro 2.webp" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$1700</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro 3.jpg" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$5000</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro 4.jpg" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$2000</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro e5.jpg" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$3000</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <div class="img-containter">
-                    <img src="./libro 6.jpg" alt="producto">
-                </div>
-                <h2>Nombre del libro</h2>
-                <strong>$2360</strong>
-                <div class="btns">
-                    <button>Añadir al carrito</button>
-                    <button>Comprar</button>
-                </div>
-            </a>
-        </div>
-    </section>
-    <footer class="pie-pagina">
-        <div class="suscripcion">
-            <p>
-                Suscribite a nuestro newsletter
-            </p>
-            <form action="suscripcion2">
-                <input type="text" placeholder="email@email.com">
-                <button type="submit">Suscribirse</button>
-            </form>
-        </div>
-        <div class="grupo-1">
-            <div class="box">
-                <a href="#" class="infoutil">Home</a>
-                <a href="#" class="infoutil">Contacto</a>
-                <a href="#" class="infoutil">About us</a>
-                <a href="#" class="infoutil">Ayuda</a>
+    <div class="home-container">
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 1.jpg" alt="">
             </div>
-            <div class="box">
-                <h2>Siguenos!</h2>
-                <div class="redsocial">
-                    <a href="#"> <i class='bx bxl-facebook-circle'></i> </a>
-                    <a href="#"> <i class='bx bxl-instagram'></i> </a>
-                    <a href="#"> <i class='bx bxl-twitter'></i> </a>
-                </div>
+            <div class="home-container__descrip">
+                <p>Living Alone</p>
+                <p>$3000</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
             </div>
         </div>
-        <div class="grupo-2">
-            <small>
-                <i class='bx bx-copyright'></i> 2021 <b>DelMerodeador</b> - Todos los derechos reservados
-            </small>
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 2.jpg" alt="">
+            </div>
+            <div class="home-container__descrip">
+                <p>A tea spoon of earth and sea</p>
+                <p>$4500</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
+            </div>
         </div>
-    </footer>
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 3.jpg" alt="">
+            </div>
+            <div class="home-container__descrip">
+                <p>Descubre la extincion</p>
+                <p>$2600</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 4.jpg" alt="">
+            </div>
+            <div class="home-container__descrip">
+                <p>Viajando en invierno</p>
+                <p>$1250</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 5.jpg" alt="">
+            </div>
+            <div class="home-container__descrip">
+                <p>Cándido</p>
+                <p>$2400</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="home-container__libro">
+            <div class="home-container__libro__img">
+                <img height=250px src="./imagenes/libro 6.jpg" alt="">
+            </div>
+            <div class="home-container__descrip">
+                <p>Mi portada de Libro</p>
+                <p>$2000</p>
+            </div>
+            <div class="home-container__button">
+                <button type="button">Comprar</button>
+                <button type="button">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid-footer">
+        <div class="grid-fotter__grupo-1">
+            <ul>
+                <li class="info-util"><a href="./Home.html" target="_blank">Home</a></li>
+                <li class="info-util"><a href="#">Contacto</a></li>
+                <li class="info-util"><a href="#">About Us</a></li>
+                <li class="info-util"><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="grid-footer__grupo-2">
+<h3>Seguinos!</h3>
+<div class="redes">
+    <ul>
+        <li><i class='bx bxl-instagram-alt'></i></li>
+        <li><i class='bx bxl-twitter' ></i></li>
+        <li><i class='bx bxl-facebook-circle' ></i></li>
+    </ul>
+</div>
+</div>
+        </div>
+        <div class="footer__copyright">
+            <p> <i class='bx bx-copyright'></i><b>DelMerodeador</b> Todos los derechos reservados</p>
+
+        </div>
+    </div>
 </body>
 
 </html>
