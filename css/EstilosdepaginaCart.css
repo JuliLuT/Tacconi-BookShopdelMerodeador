@@ -121,76 +121,68 @@ a {
     .close-menu:focus:not(:focus-visible) {
         outline: none;
     }
+
     .producto__caja1 img {
         width: 200px;
         height: 300px;
-     
-     }
-     
+
+    }
+
 }
 
-
-.producto {
+.carrito-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));  
+    grid-template-rows: [carrito-grid__producto] 1fr;
+    grid-gap: 10px;
+    margin: 40px;
+    border: 2px solid #F675A8;
+    border-radius: 8px;
+    min-width: 250px;
 }
 
-.producto__caja1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.carrito-grid__producto {
+    display: grid;
+    grid-template-rows: [img_box] 1fr [p_box] 1fr;
+    margin: 20px;
 }
 
-.producto__caja1 img {
-    width: 200px;
+.img_box img {
     height: 300px;
- border-radius: 10px;
- }
- 
+    width: 200px;
+    border-radius: 10px;
 
-.producto__caja2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2em;
 }
-
-.producto__caja2 h2 {
-    font-size: 2em;
-    font-weight: 400;
-}
-
-.producto__caja2 p {
-    font-size: 1em;
-    font-weight: 300;
-}
-
-.boton-compra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2em;
-}
-
-button {
+.p_box {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: 2/3;
-}
-
-.producto-btn {
-    background: var(--navbar-color);
-    border: none;
-    padding: 1em;
-    border-radius: 0.5em;
-    text-align: center;
-    width: 6em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
-.producto-btn:hover {
+.Total_box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.button_box {
+    display: flex;
+    justify-content: center;
+}
+
+.button_box button {
+    border: none;
+    background: var(--navbar-color);
+    padding: 0.6em;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--text-color);
+}
+
+.button_box button:hover {
     background: #322b57;
     color: var(--inverse-textcolor);
 }
