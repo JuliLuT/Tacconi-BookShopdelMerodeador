@@ -152,11 +152,15 @@ a {
     display: none;
 }
 .totales{
+    margin: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 80px;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    background: #f8e0e0;
+    border-radius: 20px;
+   
 }
 .producto .cantidad{
     display: flex;
@@ -190,6 +194,17 @@ color: var(--inverse-textcolor);
     height: 40px;
     text-align: center;
 }
+h3{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 22px;
+    background:linear-gradient(to right, #f9abab, #ee7fab);;
+}
 @media screen and (min-width:500px){
     .producto{
         flex-direction: row;
@@ -203,11 +218,15 @@ color: var(--inverse-textcolor);
         width: 75%;
     }
     .totales{
+    margin: 5px;
         display: flex;
         flex-direction: column;
+        width: 100px;
         justify-content: center;
         align-items: center;
-        width: 25%;
+        background: #f8e0e0;
+        border-radius: 20px;
+       
     }
     .producto__img{
         margin-left: 100px;
