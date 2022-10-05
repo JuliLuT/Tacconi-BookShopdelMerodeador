@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Julieta Tacconi">
-        <meta name="description" content="Libreria e-commerce">
-        <meta name="keywords" content="libros, sagas, libreria, clasicos, filosofia, ciencia ficcion, web,">
-        <title>Libreria DM Home</title>
-        <link rel="stylesheet" href="./css/EstilosdepaginaCart.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-        <link rel="icon" href="./imagenes/Del merodeador web.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap" rel="stylesheet">
-        <script defer src="./app.js"></script>
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julieta Tacconi">
+    <meta name="description" content="Libreria e-commerce">
+    <meta name="keywords" content="libros, sagas, libreria, clasicos, filosofia, ciencia ficcion, web,">
+    <title>Libreria DM Home</title>
+    <link rel="stylesheet" href="./css/EstilosdepaginaCart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="icon" href="./imagenes/Del merodeador web.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap" rel="stylesheet">
+    <script defer src="./app.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
 <body>
     <header class="topheader">
         <nav class="topnav">
@@ -31,53 +32,49 @@
             <ul class="menu">
                 <button class="close-menu" aria-label="Cerrar menú"><img src="./imagenes/cerrarbtn.svg"
                         alt="Cerrar menú"></button>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./formulario-InicioSesion.html">Mi cuenta</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
         </nav>
     </header>
-<div class="carrito-grid">
-    <div class="carrito-grid__producto">
-        <div class="img_box">
-        <img src="./imagenes/libro 3.jpg" alt="">
+    <div class="carrito">
+        <div class="producto">
+            <div class="producto__img">
+                <img height=200px src="./imagenes/libro 1.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deleniti doloribus beatae architecto ullam vero optio placeat totam minus? Libero delectus sequi omnis quam quod enim doloremque in ducimus eveniet?</p>
+            <div class="totales">
+                <button class="agregar">+</button>
+                <p class="cantidad">1</p>
+                <button class="agregar">-</button>
+                <h3>$2500</h3>
+            </div>
+        </div>
+        <div class="producto">
+            <div class="producto__img">
+                <img height=200px src="./imagenes/libro 2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quas facere inventore velit recusandae id nobis, reprehenderit nesciunt blanditiis, quod distinctio necessitatibus quos perferendis quia autem magni eaque vel mollitia?</p>
+            <div class="totales">
+            <button class="agregar">+</button>
+            <p class="cantidad">1</p>
+            <button class="agregar">-</button>
+            <h3>$2500</h3>
+        </div>
+        </div>
+        <div class="button__pagar">
+            <button class="bigbtn">Abonar</button>
+        </div>
     </div>
-    <div class="p_box">
-        <p class="precio">$2500</p>
-    </div>
-    </div>
-    <div class="carrito-grid__producto">
-        <div class="img_box">
-        <img src="./imagenes/libro 4.jpg" alt="">
-    </div>
-    <div class="p_box">
-        <p class="precio">$3000</p>
-    </div>
-    </div>
-    <div class="carrito-grid__producto">
-        <div class="img_box">
-        <img src="./imagenes/libro 6.jpg" alt="">
-    </div>
-    <div class="p_box">
-        <p class="precio">$1500</p>
-    </div>
-    </div>
-    <div class="carrito-grid__producto">
-        <div class="Total_box">
-        <h2>Total a abonar</h2>
-    </div>
-    <div class="button_box">
-       <button type="button">Abonar</button>
-    </div>
-</div>
 
     <div class="footer">
         <div class="grid-footer">
             <div class="grid-footer__grupo-1">
                 <ul>
                     <li class="info-util"><a href="./Home.html" target="_blank">Home</a></li>
-                    <li class="info-util"><a href="#">Contacto</a></li>
+                    <li class="info-util"><a href="./formulario-InicioSesion.html">Mi cuenta</a></li>
                     <li class="info-util"><a href="#">About Us</a></li>
                     <li class="info-util"><a href="#">Ayuda</a></li>
                 </ul>
@@ -99,6 +96,7 @@
         </div>
     </div>
 
-    
+
 </body>
+
 </html>

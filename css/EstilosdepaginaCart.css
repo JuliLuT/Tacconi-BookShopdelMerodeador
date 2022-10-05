@@ -130,61 +130,88 @@ a {
 
 }
 
-.carrito-grid {
-    display: grid;
-    grid-template-rows: [carrito-grid__producto] 1fr;
-    grid-gap: 10px;
-    margin: 40px;
-    border: 2px solid #F675A8;
+.carrito{
+    display: flex;
+    flex-direction: column;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.producto__img{
+    display: flex;
+   justify-content: center;
+}
+.producto__img img{
     border-radius: 8px;
-    min-width: 250px;
 }
-
-.carrito-grid__producto {
-    display: grid;
-    grid-template-rows: [img_box] 1fr [p_box] 1fr;
-    margin: 20px;
+.producto p{
+    display: none;
 }
-
-.img_box img {
-    height: 300px;
-    width: 200px;
-    border-radius: 10px;
-
+.totales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
 }
-.p_box {
+.producto .cantidad{
+    display: flex;
+}
+.agregar{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
-    font-weight: 700;
+    margin: 5px;
 }
-
-.Total_box {
+button{
+   width: 90px;
+   height: 30px;
+   padding: auto;
+   border: none;
+   background: #FFB4B4;
+   border-radius: 8px;
+   font-weight: 700;
+}
+button:hover{
+    background: #554994;
+color: var(--inverse-textcolor);
+}
+.button__pagar{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    font-size: 0.8em;
-    font-weight: 700;
+    margin: 10px;
 }
-
-.button_box {
-    display: flex;
-    justify-content: center;
-}
-
-.button_box button {
-    border: none;
-    background: var(--navbar-color);
-    padding: 0.6em;
+.bigbtn{
+    width: 200px;
+    height: 40px;
     text-align: center;
-    border-radius: 8px;
-    color: var(--text-color);
 }
-
-.button_box button:hover {
-    background: #322b57;
-    color: var(--inverse-textcolor);
+@media screen and (min-width:500px){
+    .producto{
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .producto p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 75%;
+    }
+    .totales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+    .producto__img{
+        margin-left: 100px;
+    }
 }
 
 .footer {
